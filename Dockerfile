@@ -11,6 +11,7 @@ RUN add-apt-repository -y ppa:ondrej/php
 RUN apt-get update
 RUN apt-get --allow-unauthenticated install -y php5.6
 RUN apt-get --allow-unauthenticated install -y php5.6-dom
+RUN apt-get install php5.6-mysql
 
 WORKDIR /data
 VOLUME /data
